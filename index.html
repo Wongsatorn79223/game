@@ -57,19 +57,25 @@
             background-color: #c0392b;
         }
         .info {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            font-size: 20px;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-        .info span {
-            background-color: #fff;
-            padding: 10px 15px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* ให้ตัวเลขขึ้นบรรทัดใหม่ถ้าพื้นที่ไม่พอ */
+    gap: 10px; /* เพิ่มระยะห่าง */
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.info span {
+    background-color: #fff;
+    padding: 5px 10px; /* ลด padding เพื่อลดขนาด */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 50px; /* กำหนดขนาดขั้นต่ำให้เท่ากัน */
+    text-align: center; /* จัดกลางข้อความ */
+}
+
+        
         .evaluation {
             display: none;
             margin-top: 20px;
